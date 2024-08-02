@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css"
+            integrity="sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA=="
+            crossorigin="anonymous"
+        />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+
+        <title>My Website</title>
+        <style>
+            .navbar {
+                justify-content: space-between;
+            }
+            .navbar-nav {
+                margin: auto;
+            }
+            body {
+                font-family: Axiforma, sans-serif;
+                background: #fafafa;
+            }
+            .social-icons i {
+                margin-left: 15px;
+                font-size: 22px;
+                color: #f44174;
+            }
+            .social-icons i:first-child {
+                margin-left: 0;
+            }
+            .navbar-light .navbar-nav .nav-link.active,
+            .navbar-light .navbar-nav .show > .nav-link {
+                color: #f44174 !important;
+            }
+            .heroSection .container {
+                background: url(./img/bg-1.jpg) no-repeat center center/cover;
+                height: 640px;
+                position: relative;
+            }
+            /* Define the keyframes for continuous rotation */
+            @keyframes rotateBadge {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+
+            .heroSection .badgeIcon {
+                position: absolute;
+                left: 43%;
+                top: 10%;
+                animation: rotateBadge 5s linear infinite; /* Infinite rotation */
+            }
+            .heroSection .hotRecipesBtn {
+                border-radius: 50px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                margin-top: 130px;
+            }
+            .heroSection .spicyText {
+                font-size: 64px;
+                font-weight: 600;
+                color: #1c1c1c;
+                text-transform: capitalize;
+            }
+            .heroSection .spicyText span {
+                color: #f44174;
+            }
+            .heroSection .spicyPara {
+                color: rgba(0, 0, 0, 0.6);
+            }
+            .heroSection .twoBtn .bothSameBtn {
+                background: #f44174;
+                color: #fff;
+                padding: 10px 20px;
+                border-radius: 50px;
+            }
+            .productSlider .card {
+                background: #ffffff;
+                box-shadow: 0 8px 6px 0 rgba(12, 0, 46, 0.184);
+                border-radius: 15px;
+            }
+            .productSlider .card h2 {
+                color: #f44174 !important;
+            }
+            .productSlider .viewCategory {
+                background: #f44174;
+                color: #fff;
+                padding: 10px 20px;
+                border-radius: 50px;
+                border: none;
+            }
+            .productSlider .categories {
+                color: #f44174 !important;
+            }
+            .primaryColor {
+                color: #9f2042 !important;
+            }
+            .product-card {
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                padding: 15px;
+                margin-bottom: 20px;
+            }
+            .product-image img-fluid {
+                max-width: 100%;
+                height: auto;
+                border-radius: 5px;
+            }
+            .product-title {
+                font-weight: bold;
+                margin-top: 10px;
+            }
+            .product-price {
+                color: #28a745;
+                font-weight: bold;
+                margin-top: 10px;
+            }
+            .product-discount {
+                text-decoration: line-through;
+                color: #888;
+                margin-left: 10px;
+            }
+            .product-rating {
+                color: #f39c12;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a
+                        class="navbar-brand"
+                        data-aos="fade-right"
+                        data-aos-duration="700"
+                        href="#"
+                    >
+                        <h1 class="fs-5">FoodieLand</h1>
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse justify-content-center"
+                        id="navbarNav"
+                    >
+                        <ul
+                            class="navbar-nav"
+                            data-aos="fade-up"
+                            data-aos-duration="900"
+                        >
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="#"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Recipes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                        </ul>
+                        <div
+                            class="d-flex social-icons"
+                            data-aos="fade-left"
+                            data-aos-duration="1100"
+                        >
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-x-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <section
+            class="heroSection"
+            data-aos="fade-down"
+            data-aos-duration="1200"
+        >
+            <div class="container">
+                <img
+                    src="./img/badge.png"
+                    data-aos="fade-zoom-in"
+                    data-aos-duration="1500"
+                    alt=""
+                    class="img-fluid badgeIcon"
+                />
+                <div
+                    class="row d-flex justify-content-center align-items-center"
+                >
+                    <div class="col-md-6">
+                        <button
+                            class="btn btn-primary mb-4 bg-white text-dark border-0 hotRecipesBtn"
+                            data-aos="flip-up"
+                            data-aos-duration="1800"
+                        >
+                            <i class="fa-solid fa-bowl-food"></i> Hot Recipes
+                        </button>
+                        <h2
+                            class="spicyText mb-3"
+                            data-aos="flip-down"
+                            data-aos-duration="2000"
+                        >
+                            Spicy delicious <span>chicken</span> wings
+                        </h2>
+                        <p class="spicyPara mb-4">
+                            Lorem ipsum dolor sit amet, consectetuipisicing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqut enim ad minim
+                        </p>
+                        <div class="twoBtn">
+                            <button
+                                class="bothSameBtn border-0 mx-2"
+                                data-aos="fade-right"
+                                data-aos-duration="2300"
+                            >
+                                <i class="fa-regular fa-clock"></i> 30 Minute
+                            </button>
+                            <button
+                                class="bothSameBtn border-0"
+                                data-aos="fade-left"
+                                data-aos-duration="2500"
+                            >
+                                <i class="fa-solid fa-utensils"></i> Chicken
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6"></div>
+                </div>
+            </div>
+        </section>
+        <section class="productSlider my-4">
+            <div class="container">
+                <div
+                    class="seperateCategory d-flex justify-content-between mb-4"
+                >
+                    <h2
+                        class="categories"
+                        data-aos="fade-right"
+                        data-aos-duration="500"
+                    >
+                        Categories
+                    </h2>
+                    <button
+                        class="viewCategory"
+                        data-aos="fade-left"
+                        data-aos-duration="900"
+                    >
+                        View All Categories
+                    </button>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div
+                            class="card card-gradient-1 border-0"
+                            data-aos="fade-up"
+                            data-aos-duration="500"
+                        >
+                            <img
+                                src="./img/breakfast.png"
+                                alt=""
+                                class="img-fluid"
+                            />
+                            <h2 class="fs-5 text-center">Breakfast</h2>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div
+                            class="card border-0"
+                            data-aos="fade-up"
+                            data-aos-duration="1500"
+                        >
+                            <img
+                                src="./img/vegetable.png"
+                                alt=""
+                                class="img-fluid"
+                            />
+                            <h2 class="fs-5 text-center">Vegetable</h2>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div
+                            class="card border-0"
+                            data-aos="fade-up"
+                            data-aos-duration="2000"
+                        >
+                            <img
+                                src="./img/meat.png"
+                                alt=""
+                                class="img-fluid"
+                            />
+                            <h2 class="fs-5 text-center">Meat</h2>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div
+                            class="card border-0"
+                            data-aos="fade-zoom-in"
+                            data-aos-duration="2500"
+                        >
+                            <img
+                                src="./img/dessert.png"
+                                alt=""
+                                class="img-fluid"
+                            />
+                            <h2 class="fs-5 text-center">Dessert</h2>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div
+                            class="card border-0"
+                            data-aos="fade-up"
+                            data-aos-duration="3000"
+                        >
+                            <img
+                                src="./img/lunch.png"
+                                alt=""
+                                class="img-fluid"
+                            />
+                            <h2 class="fs-5 text-center">Lunch</h2>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div
+                            class="card border-0"
+                            data-aos="fade-zoom-in"
+                            data-aos-duration="3500"
+                        >
+                            <img
+                                src="./img/chocolate.png"
+                                alt=""
+                                class="img-fluid"
+                            />
+                            <h2 class="fs-5 text-center">Chocolate</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="simpleTasty my-5">
+            <h2 class="fs-2 text-capitalize text-center primaryColor">
+                Simple and tasty recipes
+            </h2>
+            <div class="container">
+                <p class="text-center text-black-50">
+                    Discover a collection of simple and tasty recipes that are
+                    quick to prepare. Using easy-to-find ingredients, these
+                    dishes offer delightful flavors and satisfying meals without
+                    fuss, perfect for busy days or casual gatherings.
+                </p>
+                <div class="row">
+                    <div class="col">
+                        <div class="product-card">
+                            <img
+                                src="./img/pro1.png"
+                                alt="Product Image"
+                                class="product-image img-fluid"
+                            />
+                            <div class="product-title">
+                                Gorton's Beer Battered Fish Fillets
+                            </div>
+                            <div class="product-rating">(4.5)</div>
+                            <div>In stock</div>
+                            <div class="product-price">
+                                $23.85
+                                <span class="product-discount">$28.00</span>
+                            </div>
+                            <button class="btn btn-primary mt-2">
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card">
+                            <img
+                                src="./img/pro2.png"
+                                alt="Product Image"
+                                class="product-image img-fluid"
+                            />
+                            <div class="product-title">
+                                Lightly Sweet &amp; Fat Free Dried Mango
+                            </div>
+                            <div class="product-rating">(4.75)</div>
+                            <div>In stock</div>
+                            <div class="product-price">
+                                $65.18
+                                <span class="product-discount">$70.00</span>
+                            </div>
+                            <button class="btn btn-primary mt-2">
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card">
+                            <img
+                                src="./img/pro3.png"
+                                alt="Product Image"
+                                class="product-image img-fluid"
+                            />
+                            <div class="product-title">
+                                Nestle Original Coffee-Mate Coffee Creamer
+                            </div>
+                            <div class="product-rating">(5.0)</div>
+                            <div>In stock</div>
+                            <div class="product-price">
+                                $32.45
+                                <span class="product-discount">$37.96</span>
+                            </div>
+                            <button class="btn btn-primary mt-2">
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card">
+                            <img
+                                src="./img/pro4.png"
+                                alt="Product Image"
+                                class="product-image img-fluid"
+                            />
+                            <div class="product-title">
+                                Seeds of Change Brown &amp; Red Rice
+                            </div>
+                            <div class="product-rating">(5.0)</div>
+                            <div>In stock</div>
+                            <div class="product-price">
+                                $72.00
+                                <span class="product-discount">$80.00</span>
+                            </div>
+                            <button class="btn btn-primary mt-2">
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card">
+                            <img
+                                src="./img/pro5.png"
+                                alt="Product Image"
+                                class="product-image img-fluid"
+                            />
+                            <div class="product-title">
+                                Sahale Crumble Cashew Mix Snacks
+                            </div>
+                            <div class="product-rating">(4.5)</div>
+                            <div>In stock</div>
+                            <div class="product-price">
+                                $45.32
+                                <span class="product-discount">$54.69</span>
+                            </div>
+                            <button class="btn btn-primary mt-2">
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- Owl Carousel JS -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+
+        <!-- AOS JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    </body>
+</html>
