@@ -1,0 +1,162 @@
+/* Modal Popup CSS */
+.modal-custom-size {
+    max-width: 880px;
+    max-height: 600px;
+    border-radius: 25px;
+}
+.modal-content {
+    border-radius: 25px;
+}
+.modal-body {
+    padding: 20px;
+}
+
+.productCard {
+    display: flex;
+    align-items: center;
+}
+
+.productImage img {
+    width: 390px;
+    border-radius: 10px;
+}
+
+.productDetails {
+    margin-left: 20px;
+}
+
+.saleOff {
+    background-color: #fde9f4;
+    color: #f74b81;
+    padding: 0.2rem 1.2rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    display: inline-block;
+}
+
+.productTitle {
+    font-size: 32px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.rating {
+    font-size: 14px;
+    color: #ffa500;
+}
+
+.price {
+    font-size: 20px;
+    color: #28a745;
+    margin: 10px 0;
+    gap: 20px;
+}
+
+.currentPrice {
+    font-weight: bold;
+    font-size: 58px;
+}
+
+.discount {
+    color: #ff0000;
+    margin-left: 10px;
+}
+
+.originalPrice {
+    text-decoration: line-through;
+    color: #999;
+    margin-left: 5px;
+}
+
+.quantity {
+    margin: 10px 0;
+}
+
+.quantity input {
+    width: 50px;
+    text-align: center;
+}
+
+.btnPrimary {
+    background-color: #28a745;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Login Modal CSS */
+#userDropdown .dropdown-toggle::after {
+    display: none; /* Hide the default dropdown arrow */
+}
+.userNameDropdown {
+    display: none;
+    margin-left: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #343a40;
+}
+.dropdown-menu {
+    padding: 0;
+}
+.dropdown-item {
+    padding: 10px 20px;
+}
+.form-control {
+    border-radius: 0.25rem;
+    box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.075) !important;
+    margin-bottom: 1rem;
+    padding: 0.75rem 1.25rem;
+}
+.btn-primary {
+    border-radius: 0.25rem;
+    box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.075) !important;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+.btn-link {
+    color: #007bff;
+    text-decoration: none;
+    padding: 0;
+    font-size: 0.875rem;
+}
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+#logoutBtn {
+    cursor: pointer;
+}
+/* Additional styling for positioning */
+#userIcon {
+    cursor: pointer;
+}
+#authModalLabel {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.bothLoginSignUpBtn:hover {
+    color: #000000;
+    background-color: #ffffff;
+    border-color: #959595;
+}
+
+/* Login CSS */
+#userName {
+    display: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#logoutContainer {
+    display: none;
+    margin-top: 5px;
+}
+.user-info {
+    display: flex;
+    align-items: center;
+}
+#userIcon {
+    display: block;
+    margin-left: 10px;
+}

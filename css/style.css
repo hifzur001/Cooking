@@ -1,0 +1,336 @@
+.navbar {
+    justify-content: space-between;
+}
+.navbar-nav {
+    margin: auto;
+}
+body {
+    font-family: Axiforma, sans-serif;
+    background: #fafafa;
+}
+.social-icons i {
+    margin-left: 15px;
+    font-size: 22px;
+    color: #f44174;
+}
+.social-icons i:first-child {
+    margin-left: 0;
+}
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+    color: #f44174 !important;
+}
+.heroSection {
+    margin-top: 80px;
+}
+.heroSection .container {
+    background: url(../img/bg-1.jpg) no-repeat center center/cover;
+    height: 640px;
+    position: relative;
+}
+/* Define the keyframes for continuous rotation */
+@keyframes rotateBadge {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.heroSection .badgeIcon {
+    position: absolute;
+    left: 43%;
+    top: 10%;
+    animation: rotateBadge 5s linear infinite; /* Infinite rotation */
+}
+.heroSection .hotRecipesBtn {
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 130px;
+}
+.heroSection .spicyText {
+    font-size: 64px;
+    font-weight: 600;
+    color: #1c1c1c;
+    text-transform: capitalize;
+}
+.heroSection .spicyText span {
+    color: #f44174;
+}
+.heroSection .spicyPara {
+    color: rgba(0, 0, 0, 0.6);
+}
+.heroSection .twoBtn .bothSameBtn {
+    background: #f44174;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+.productSlider .card {
+    background: #ffffff;
+    box-shadow: 0 8px 6px 0 rgba(12, 0, 46, 0.184);
+    border-radius: 15px;
+}
+.productSlider .card h2 {
+    color: #f44174 !important;
+}
+.productSlider .viewCategory {
+    background: #f44174;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+}
+.productSlider .categories {
+    color: #f44174 !important;
+}
+.primaryColor {
+    color: #f44174 !important;
+}
+.product-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 6px 0 rgba(12, 0, 46, 0.184);
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #f2f2f2;
+    position: relative;
+}
+.product-card {
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+}
+
+.icon-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.image-container:hover .icon-overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.icon-box {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255); /* Semi-transparent background */
+    color: #f44174 !important;
+    cursor: pointer;
+}
+
+.icon-box i {
+    font-size: 1.5rem;
+    color: #f44174; /* Set the icon color */
+    transition: transform 0.3s ease;
+}
+
+.icon-box:hover i {
+    transform: scale(1.2);
+}
+
+.product-image {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover .product-image {
+    transform: scale(1.05);
+}
+
+.social-icons {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.fa-cart-shopping {
+    position: relative;
+}
+
+.cart-badge {
+    background-color: rgb(6, 174, 51);
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    display: none; /* Initially hidden */
+    white-space: nowrap;
+}
+
+.discount-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #f44174;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-bottom-left-radius: 8px;
+}
+.addToCartBtn {
+    background: #f44174;
+    border: none;
+    transition: all 0.5s;
+}
+.btn-primary:hover {
+    background: #000000 !important;
+    color: #ffffff !important;
+    transform: scale(1.1) !important;
+}
+
+.btn.btn-primary.mt-2.addToCartBtn {
+    font-size: 13px;
+}
+.product-image img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.product-title {
+    font-weight: bold;
+    margin-top: 10px;
+}
+.product-price {
+    color: #28a745;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.product-discount {
+    text-decoration: line-through;
+    color: #888;
+    margin-left: 10px;
+}
+.product-rating {
+    color: #f39c12;
+}
+.stockedItem {
+    color: #f44174;
+}
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.offer-card {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    /* height: 500px; */
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    font-size: 40px;
+    color: #888;
+    cursor: pointer;
+}
+.offer-title {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.offer-price {
+    font-size: 32px;
+    color: #28a745;
+    font-weight: bold;
+}
+.offer-discount {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 18px;
+}
+.offer-timer {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #555;
+    display: flex;
+    gap: 10px;
+}
+.timer-box {
+    display: inline-block;
+    width: 60px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid;
+    border: 2px solid #f44174;
+    text-align: center;
+}
+.timer-box span {
+    display: block;
+}
+.time-label {
+    font-size: 12px;
+    color: #888;
+}
+.offer-btn {
+    background-color: #f44174;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.offer-btn:hover {
+    background-color: #c7345d;
+}
+.dealDay {
+    color: #f39c12;
+}
+.rightBackground {
+    animation: floating 3s ease-in-out infinite;
+    width: 365px;
+}
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, 25px);
+    }
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+.googleSignUpIcon {
+    width: 30px;
+}
+.emailSignUpIcon {
+    width: 30px;
+}
+span#userName {
+    margin-left: 8px;
+    cursor: pointer;
+    color: #f44174;
+}

@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Bootstrap CSS -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
             crossorigin="anonymous"
         />
-
-        <!-- Font Awesome -->
         <link
             rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css"
-            integrity="sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA=="
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.css"
+            integrity="sha512-8BU3emz11z9iF75b10oPjjpamM4Mz23yQFQymbtwyPN3mNWHxpgeqyrYnkIUP6A8KyAj5k2p3MiYLtYqew7gIw=="
             crossorigin="anonymous"
         />
         <link
@@ -25,191 +21,165 @@
             rel="stylesheet"
         />
 
-        <title>My Website</title>
-        <style>
-            .navbar {
-                justify-content: space-between;
-            }
-            .navbar-nav {
-                margin: auto;
-            }
-            body {
-                font-family: Axiforma, sans-serif;
-                background: #fafafa;
-            }
-            .social-icons i {
-                margin-left: 15px;
-                font-size: 22px;
-                color: #f44174;
-            }
-            .social-icons i:first-child {
-                margin-left: 0;
-            }
-            .navbar-light .navbar-nav .nav-link.active,
-            .navbar-light .navbar-nav .show > .nav-link {
-                color: #f44174 !important;
-            }
-            .heroSection .container {
-                background: url(./img/bg-1.jpg) no-repeat center center/cover;
-                height: 640px;
-                position: relative;
-            }
-            /* Define the keyframes for continuous rotation */
-            @keyframes rotateBadge {
-                from {
-                    transform: rotate(0deg);
-                }
-                to {
-                    transform: rotate(360deg);
-                }
-            }
+        <!-- Start Custom CSS -->
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/modal.css" />
+        <!-- End Custom CSS -->
 
-            .heroSection .badgeIcon {
-                position: absolute;
-                left: 43%;
-                top: 10%;
-                animation: rotateBadge 5s linear infinite; /* Infinite rotation */
-            }
-            .heroSection .hotRecipesBtn {
-                border-radius: 50px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                margin-top: 130px;
-            }
-            .heroSection .spicyText {
-                font-size: 64px;
-                font-weight: 600;
-                color: #1c1c1c;
-                text-transform: capitalize;
-            }
-            .heroSection .spicyText span {
-                color: #f44174;
-            }
-            .heroSection .spicyPara {
-                color: rgba(0, 0, 0, 0.6);
-            }
-            .heroSection .twoBtn .bothSameBtn {
-                background: #f44174;
-                color: #fff;
-                padding: 10px 20px;
-                border-radius: 50px;
-            }
-            .productSlider .card {
-                background: #ffffff;
-                box-shadow: 0 8px 6px 0 rgba(12, 0, 46, 0.184);
-                border-radius: 15px;
-            }
-            .productSlider .card h2 {
-                color: #f44174 !important;
-            }
-            .productSlider .viewCategory {
-                background: #f44174;
-                color: #fff;
-                padding: 10px 20px;
-                border-radius: 50px;
-                border: none;
-            }
-            .productSlider .categories {
-                color: #f44174 !important;
-            }
-            .primaryColor {
-                color: #9f2042 !important;
-            }
-            .product-card {
-                border: 1px solid #ddd;
-                border-radius: 5px;
-                padding: 15px;
-                margin-bottom: 20px;
-            }
-            .product-image img-fluid {
-                max-width: 100%;
-                height: auto;
-                border-radius: 5px;
-            }
-            .product-title {
-                font-weight: bold;
-                margin-top: 10px;
-            }
-            .product-price {
-                color: #28a745;
-                font-weight: bold;
-                margin-top: 10px;
-            }
-            .product-discount {
-                text-decoration: line-through;
-                color: #888;
-                margin-left: 10px;
-            }
-            .product-rating {
-                color: #f39c12;
-            }
-        </style>
+        <!-- Start Title -->
+        <title>FoodieLand | #1 Online Food Order</title>
+        <!-- End Title -->
     </head>
+
     <body>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-                    <a
-                        class="navbar-brand"
-                        data-aos="fade-right"
-                        data-aos-duration="700"
-                        href="#"
-                    >
-                        <h1 class="fs-5">FoodieLand</h1>
-                    </a>
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav"
-                        aria-controls="navbarNav"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div
-                        class="collapse navbar-collapse justify-content-center"
-                        id="navbarNav"
-                    >
-                        <ul
-                            class="navbar-nav"
-                            data-aos="fade-up"
-                            data-aos-duration="900"
-                        >
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link active"
-                                    aria-current="page"
-                                    href="#"
-                                    >Home</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Recipes</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About Us</a>
-                            </li>
-                        </ul>
+        <!-- Special Offer Start -->
+        <div class="popup-overlay" id="popup-overlay">
+            <div class="offer-card" data-aos="zoom-in" data-aos-duration="500">
+                <span class="close-btn" id="close-btn">&times;</span>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 offer-text">
+                            <div class="offer-deal">
+                                <p class="text-capitalize dealDay">
+                                    Deal of the day
+                                </p>
+                            </div>
+                            <div class="offer-title d-flex flex-column">
+                                <span> Twilight Skewers</span>
+                                <span> Grilled Flavors </span>
+                                <span>of the Evening</span>
+                            </div>
+                            <div class="offer-price">
+                                $15.85
+                                <span class="offer-discount">$16.80</span>
+                            </div>
+                            <p class="text-black-50">Hurry Up! Offer End In:</p>
+                            <div class="offer-timer mb-3">
+                                <div class="timer-box">
+                                    <span id="days">2</span>
+                                    <span class="time-label">Days</span>
+                                </div>
+                                <div class="timer-box">
+                                    <span id="hours">12</span>
+                                    <span class="time-label">Hours</span>
+                                </div>
+                                <div class="timer-box">
+                                    <span id="minutes">13</span>
+                                    <span class="time-label">Mins</span>
+                                </div>
+                                <div class="timer-box">
+                                    <span id="seconds">08</span>
+                                    <span class="time-label">Sec</span>
+                                </div>
+                            </div>
+                            <button class="offer-btn">Shop Now</button>
+                        </div>
                         <div
-                            class="d-flex social-icons"
-                            data-aos="fade-left"
-                            data-aos-duration="1100"
+                            class="col-md-6 d-flex justify-content-center align-items-center"
                         >
-                            <i class="fa-brands fa-facebook"></i>
-                            <i class="fa-brands fa-x-twitter"></i>
-                            <i class="fa-brands fa-instagram"></i>
+                            <img
+                                src="./img/right-bg.png"
+                                alt=""
+                                class="rightBackground"
+                            />
                         </div>
                     </div>
                 </div>
-            </nav>
+            </div>
         </div>
+        <!-- Special Offer End -->
+        <!-- Navbar Start -->
+        <div>
+            <div class="container">
+                <nav
+                    class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
+                >
+                    <div class="container">
+                        <a
+                            class="navbar-brand"
+                            data-aos="fade-right"
+                            data-aos-duration="700"
+                            href="#"
+                        >
+                            <h1 class="fs-5">FoodieLand</h1>
+                        </a>
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav"
+                            aria-controls="navbarNav"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div
+                            class="collapse navbar-collapse justify-content-center"
+                            id="navbarNav"
+                        >
+                            <ul
+                                class="navbar-nav"
+                                data-aos="fade-up"
+                                data-aos-duration="900"
+                            >
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link active"
+                                        aria-current="page"
+                                        href="#"
+                                        >Home</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Recipes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About Us</a>
+                                </li>
+                            </ul>
+                            <!-- Social Icons -->
+
+                            <div
+                                class="d-flex social-icons"
+                                data-aos="fade-left"
+                                data-aos-duration="1100"
+                            >
+                                <i class="fa-solid fa-cart-shopping">
+                                    <span class="cart-badge">0</span>
+                                </i>
+                                <i
+                                    class="fa-regular fa-heart wishlistIcon"
+                                    data-product-id="1"
+                                ></i>
+                                <div class="user-info">
+                                    <div id="userIcon">
+                                        <i class="fa-regular fa-user"></i>
+                                    </div>
+                                    <span id="userName" class="userName"></span>
+                                    <div id="logoutContainer">
+                                        <button
+                                            id="logoutBtn"
+                                            class="btn btn-danger"
+                                        >
+                                            Logout
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+        <!-- Hero Section Start -->
         <section
             class="heroSection"
             data-aos="fade-down"
@@ -267,6 +237,8 @@
                 </div>
             </div>
         </section>
+        <!-- Hero Section End -->
+        <!-- Product Slider Start -->
         <section class="productSlider my-4">
             <div class="container">
                 <div
@@ -274,7 +246,7 @@
                 >
                     <h2
                         class="categories"
-                        data-aos="fade-right"
+                        data-aos="zoom-in-right"
                         data-aos-duration="500"
                     >
                         Categories
@@ -291,7 +263,7 @@
                     <div class="col">
                         <div
                             class="card card-gradient-1 border-0"
-                            data-aos="fade-up"
+                            data-aos="zoom-in-right"
                             data-aos-duration="500"
                         >
                             <img
@@ -305,7 +277,7 @@
                     <div class="col">
                         <div
                             class="card border-0"
-                            data-aos="fade-up"
+                            data-aos="zoom-in-right"
                             data-aos-duration="1500"
                         >
                             <img
@@ -319,7 +291,7 @@
                     <div class="col">
                         <div
                             class="card border-0"
-                            data-aos="fade-up"
+                            data-aos="zoom-in-right"
                             data-aos-duration="2000"
                         >
                             <img
@@ -333,9 +305,11 @@
                     <div class="col">
                         <div
                             class="card border-0"
-                            data-aos="fade-zoom-in"
+                            data-aos="zoom-in-right"
                             data-aos-duration="2500"
                         >
+                            <!-- Square box -->
+
                             <img
                                 src="./img/dessert.png"
                                 alt=""
@@ -344,10 +318,11 @@
                             <h2 class="fs-5 text-center">Dessert</h2>
                         </div>
                     </div>
+
                     <div class="col">
                         <div
                             class="card border-0"
-                            data-aos="fade-up"
+                            data-aos="zoom-in-right"
                             data-aos-duration="3000"
                         >
                             <img
@@ -361,7 +336,7 @@
                     <div class="col">
                         <div
                             class="card border-0"
-                            data-aos="fade-zoom-in"
+                            data-aos="zoom-in-right"
                             data-aos-duration="3500"
                         >
                             <img
@@ -375,120 +350,277 @@
                 </div>
             </div>
         </section>
+        <!-- Product Slider End -->
+        <!-- Recipe Start -->
         <section class="simpleTasty my-5">
-            <h2 class="fs-2 text-capitalize text-center primaryColor">
+            <h2
+                class="fs-2 text-capitalize text-center primaryColor"
+                data-aos="zoom-in-left"
+                data-aos-duration="2000"
+            >
                 Simple and tasty recipes
             </h2>
             <div class="container">
-                <p class="text-center text-black-50">
+                <p
+                    class="text-center text-black-50"
+                    data-aos="zoom-in-right"
+                    data-aos-duration="2500"
+                >
                     Discover a collection of simple and tasty recipes that are
                     quick to prepare. Using easy-to-find ingredients, these
                     dishes offer delightful flavors and satisfying meals without
                     fuss, perfect for busy days or casual gatherings.
                 </p>
                 <div class="row">
-                    <div class="col">
+                    <!-- Product 1 Card -->
+                    <div
+                        class="col"
+                        data-aos="zoom-in-left"
+                        data-aos-duration="800"
+                    >
                         <div class="product-card">
-                            <img
-                                src="./img/pro1.png"
-                                alt="Product Image"
-                                class="product-image img-fluid"
-                            />
+                            <div class="discount-badge">20% OFF</div>
+                            <div class="image-container">
+                                <img
+                                    src="./img/pro1.png"
+                                    alt="Product Image"
+                                    class="product-image img-fluid"
+                                />
+                                <div class="icon-overlay">
+                                    <div class="icon-box wishlist-icon-box">
+                                        <i
+                                            class="fa-solid fa-heart wishlist-icon"
+                                        ></i>
+                                    </div>
+                                    <div class="icon-box cart-icon-box">
+                                        <i
+                                            class="fa-solid fa-cart-shopping cart-icon"
+                                        ></i>
+                                    </div>
+                                    <div class="icon-box quick-view-icon-box">
+                                        <i
+                                            class="fa-solid fa-eye quick-view-icon"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#productModal1"
+                                        ></i>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="product-title">
                                 Gorton's Beer Battered Fish Fillets
                             </div>
                             <div class="product-rating">(4.5)</div>
-                            <div>In stock</div>
+                            <div class="stockedItem">In stock</div>
                             <div class="product-price">
                                 $23.85
                                 <span class="product-discount">$28.00</span>
                             </div>
-                            <button class="btn btn-primary mt-2">
-                                Add To Cart
+                            <button class="btn btn-primary mt-2 addToCartBtn">
+                                <i class="fa-solid fa-cart-shopping"></i> Add To
+                                Cart
                             </button>
                         </div>
                     </div>
-                    <div class="col">
+
+                    <!-- Product 2 Card -->
+                    <div
+                        class="col"
+                        data-aos="zoom-in-left"
+                        data-aos-duration="1200"
+                    >
                         <div class="product-card">
-                            <img
-                                src="./img/pro2.png"
-                                alt="Product Image"
-                                class="product-image img-fluid"
-                            />
+                            <div class="discount-badge">25% OFF</div>
+                            <div class="image-container">
+                                <img
+                                    src="./img/pro2.png"
+                                    alt="Product Image"
+                                    class="product-image img-fluid"
+                                />
+                                <div class="icon-overlay">
+                                    <div class="icon-box wishlist-icon-box">
+                                        <i
+                                            class="fa-solid fa-heart wishlist-icon"
+                                        ></i>
+                                    </div>
+                                    <div class="icon-box cart-icon-box">
+                                        <i
+                                            class="fa-solid fa-cart-shopping cart-icon"
+                                        ></i>
+                                    </div>
+                                    <div class="icon-box quick-view-icon-box">
+                                        <i
+                                            class="fa-solid fa-eye quick-view-icon"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#productModal2"
+                                        ></i>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="product-title">
                                 Lightly Sweet &amp; Fat Free Dried Mango
                             </div>
                             <div class="product-rating">(4.75)</div>
-                            <div>In stock</div>
+                            <div class="stockedItem">In stock</div>
                             <div class="product-price">
                                 $65.18
                                 <span class="product-discount">$70.00</span>
                             </div>
-                            <button class="btn btn-primary mt-2">
-                                Add To Cart
+                            <button class="btn btn-primary mt-2 addToCartBtn">
+                                <i class="fa-solid fa-cart-shopping"></i> Add To
+                                Cart
                             </button>
                         </div>
                     </div>
-                    <div class="col">
+
+                    <!-- Product 3 Card -->
+                    <div
+                        class="col"
+                        data-aos="zoom-in-left"
+                        data-aos-duration="1600"
+                    >
                         <div class="product-card">
-                            <img
-                                src="./img/pro3.png"
-                                alt="Product Image"
-                                class="product-image img-fluid"
-                            />
+                            <div class="discount-badge">17% OFF</div>
+                            <div class="image-container">
+                                <img
+                                    src="./img/pro3.png"
+                                    alt="Product Image"
+                                    class="product-image img-fluid"
+                                />
+                                <div class="icon-overlay">
+                                    <div class="icon-box wishlist-icon-box">
+                                        <i
+                                            class="fa-solid fa-heart wishlist-icon"
+                                        ></i>
+                                    </div>
+                                    <div class="icon-box cart-icon-box">
+                                        <i
+                                            class="fa-solid fa-cart-shopping cart-icon"
+                                        ></i>
+                                    </div>
+                                    <div class="icon-box quick-view-icon-box">
+                                        <i
+                                            class="fa-solid fa-eye quick-view-icon"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#productModal3"
+                                        ></i>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="product-title">
                                 Nestle Original Coffee-Mate Coffee Creamer
                             </div>
                             <div class="product-rating">(5.0)</div>
-                            <div>In stock</div>
+                            <div class="stockedItem">In stock</div>
                             <div class="product-price">
                                 $32.45
                                 <span class="product-discount">$37.96</span>
                             </div>
-                            <button class="btn btn-primary mt-2">
-                                Add To Cart
+                            <button class="btn btn-primary mt-2 addToCartBtn">
+                                <i class="fa-solid fa-cart-shopping"></i> Add To
+                                Cart
                             </button>
                         </div>
                     </div>
-                    <div class="col">
+
+                    <!-- Product 4 Card -->
+                    <div
+                        class="col"
+                        data-aos="zoom-in-left"
+                        data-aos-duration="2000"
+                    >
                         <div class="product-card">
-                            <img
-                                src="./img/pro4.png"
-                                alt="Product Image"
-                                class="product-image img-fluid"
-                            />
+                            <div class="discount-badge">10% OFF</div>
+                            <div class="image-container">
+                                <img
+                                    src="./img/pro4.png"
+                                    alt="Product Image"
+                                    class="product-image img-fluid"
+                                />
+                                <div class="icon-overlay">
+                                    <div class="icon-box wishlist-icon-box">
+                                        <i
+                                            class="fa-solid fa-heart wishlist-icon"
+                                        ></i>
+                                    </div>
+                                    <div class="icon-box cart-icon-box">
+                                        <i
+                                            class="fa-solid fa-cart-shopping cart-icon"
+                                        ></i>
+                                    </div>
+                                    <div class="icon-box quick-view-icon-box">
+                                        <i
+                                            class="fa-solid fa-eye quick-view-icon"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#productModal4"
+                                        ></i>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="product-title">
                                 Seeds of Change Brown &amp; Red Rice
                             </div>
                             <div class="product-rating">(5.0)</div>
-                            <div>In stock</div>
+                            <div class="stockedItem">In stock</div>
                             <div class="product-price">
                                 $72.00
                                 <span class="product-discount">$80.00</span>
                             </div>
-                            <button class="btn btn-primary mt-2">
-                                Add To Cart
+                            <button class="btn btn-primary mt-2 addToCartBtn">
+                                <i class="fa-solid fa-cart-shopping"></i> Add To
+                                Cart
                             </button>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="product-card">
-                            <img
-                                src="./img/pro5.png"
-                                alt="Product Image"
-                                class="product-image img-fluid"
-                            />
+
+                    <!-- Product 5 Card -->
+                    <div
+                        class="col"
+                        data-aos="zoom-in-left"
+                        data-aos-duration="2400"
+                    >
+                        <div class="product-card" data-product-id="1">
+                            <div class="discount-badge">30% OFF</div>
+                            <div class="image-container">
+                                <img
+                                    src="./img/pro5.png"
+                                    alt="Product Image"
+                                    class="product-image img-fluid"
+                                />
+                                <div class="icon-overlay">
+                                    <div class="icon-box wishlist-icon-box">
+                                        <i
+                                            class="fa-solid fa-heart wishlist-icon"
+                                        ></i>
+                                    </div>
+                                    <div class="icon-box cart-icon-box">
+                                        <i
+                                            class="fa-solid fa-cart-shopping cart-icon"
+                                        ></i>
+                                    </div>
+                                    <div class="icon-box quick-view-icon-box">
+                                        <i
+                                            class="fa-solid fa-eye quick-view-icon"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal"
+                                        ></i>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="product-title">
                                 Sahale Crumble Cashew Mix Snacks
                             </div>
                             <div class="product-rating">(4.5)</div>
-                            <div>In stock</div>
+                            <div class="stockedItem">In stock</div>
                             <div class="product-price">
                                 $45.32
                                 <span class="product-discount">$54.69</span>
                             </div>
-                            <button class="btn btn-primary mt-2">
-                                Add To Cart
+                            <button
+                                class="btn btn-primary mt-2 addToCartBtn"
+                                data-product-id="1"
+                            >
+                                <i class="fa-solid fa-cart-shopping"></i> Add To
+                                Cart
                             </button>
                         </div>
                     </div>
@@ -496,24 +628,631 @@
             </div>
         </section>
 
-        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <!-- Recipe End -->
+        <!-- Product Modal Popup Starts -->
+        <!-- Product 1  -->
+        <div
+            class="modal fade"
+            id="productModal1"
+            tabindex="-1"
+            aria-labelledby="productModalLabel1"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered modal-custom-size">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button
+                            type="button"
+                            class="btn-close float-end"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                        <div
+                            class="row d-flex justify-content-center align-items-center"
+                        >
+                            <div class="col-md-6">
+                                <div class="productImage">
+                                    <img
+                                        src="./img/pro1.png"
+                                        alt="Product Image"
+                                    />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="productDetails">
+                                    <span class="saleOff mb-2"
+                                        >Limited Offer</span
+                                    >
+                                    <h2 class="productTitle mb-3">
+                                        Gorton's Beer Battered Fish Fillets
+                                    </h2>
+                                    <div class="rating mb-3">
+                                        <span>★ 4.5/5 (20 reviews)</span>
+                                    </div>
+                                    <div
+                                        class="price d-flex align-items-center g-2 mb-3"
+                                    >
+                                        <span class="currentPrice">$23.85</span>
+                                        <div class="d-flex flex-column">
+                                            <span class="discount"
+                                                >20% Off</span
+                                            >
+                                            <span class="originalPrice"
+                                                >$28.00</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <button
+                                        type="button"
+                                        class="btn btn-primary addToCartBtn"
+                                    >
+                                        <i
+                                            class="fa-solid fa-cart-shopping"
+                                        ></i>
+                                        Add To Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Product 2 -->
+        <div
+            class="modal fade"
+            id="productModal2"
+            tabindex="-1"
+            aria-labelledby="productModalLabel2"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered modal-custom-size">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button
+                            type="button"
+                            class="btn-close float-end"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                        <div
+                            class="row d-flex justify-content-center align-items-center"
+                        >
+                            <div class="col-md-6">
+                                <div class="productImage">
+                                    <img
+                                        src="./img/pro2.png"
+                                        alt="Product Image"
+                                    />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="productDetails">
+                                    <span class="saleOff mb-2"
+                                        >Limited Offer</span
+                                    >
+                                    <h2 class="productTitle mb-3">
+                                        Lightly Sweet &amp; Fat Free Dried Mango
+                                    </h2>
+                                    <div class="rating mb-3">
+                                        <span>★ 4.75/5 (15 reviews)</span>
+                                    </div>
+                                    <div
+                                        class="price d-flex align-items-center g-2 mb-3"
+                                    >
+                                        <span class="currentPrice">$65.18</span>
+                                        <div class="d-flex flex-column">
+                                            <span class="discount"
+                                                >25% Off</span
+                                            >
+                                            <span class="originalPrice"
+                                                >$70.00</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <button
+                                        type="button"
+                                        class="btn btn-primary addToCartBtn"
+                                    >
+                                        <i
+                                            class="fa-solid fa-cart-shopping"
+                                        ></i>
+                                        Add To Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div
+            class="modal fade"
+            id="productModal3"
+            tabindex="-1"
+            aria-labelledby="productModalLabel3"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered modal-custom-size">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button
+                            type="button"
+                            class="btn-close float-end"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                        <div
+                            class="row d-flex justify-content-center align-items-center"
+                        >
+                            <div class="col-md-6">
+                                <div class="productImage">
+                                    <img
+                                        src="./img/pro3.png"
+                                        alt="Product Image"
+                                    />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="productDetails">
+                                    <span class="saleOff mb-2"
+                                        >Limited Offer</span
+                                    >
+                                    <h2 class="productTitle mb-3">
+                                        Nestle Original Coffee-Mate Coffee
+                                        Creamer
+                                    </h2>
+                                    <div class="rating mb-3">
+                                        <span>★ 5.0/5 (100 reviews)</span>
+                                    </div>
+                                    <div
+                                        class="price d-flex align-items-center g-2 mb-3"
+                                    >
+                                        <span class="currentPrice">$32.45</span>
+                                        <div class="d-flex flex-column">
+                                            <span class="discount"
+                                                >17% Off</span
+                                            >
+                                            <span class="originalPrice"
+                                                >$37.96</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <button
+                                        type="button"
+                                        class="btn btn-primary addToCartBtn"
+                                    >
+                                        <i
+                                            class="fa-solid fa-cart-shopping"
+                                        ></i>
+                                        Add To Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Product 4 -->
+        <div
+            class="modal fade"
+            id="productModal4"
+            tabindex="-1"
+            aria-labelledby="productModalLabel4"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered modal-custom-size">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button
+                            type="button"
+                            class="btn-close float-end"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                        <div
+                            class="row d-flex justify-content-center align-items-center"
+                        >
+                            <div class="col-md-6">
+                                <div class="productImage">
+                                    <img
+                                        src="./img/pro4.png"
+                                        alt="Product Image"
+                                    />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="productDetails">
+                                    <span class="saleOff mb-2"
+                                        >Limited Offer</span
+                                    >
+                                    <h2 class="productTitle mb-3">
+                                        Seeds of Change Brown &amp; Red Rice
+                                    </h2>
+                                    <div class="rating mb-3">
+                                        <span>★ 5.0/5 (25 reviews)</span>
+                                    </div>
+                                    <div
+                                        class="price d-flex align-items-center g-2 mb-3"
+                                    >
+                                        <span class="currentPrice">$72.00</span>
+                                        <div class="d-flex flex-column">
+                                            <span class="discount"
+                                                >10% Off</span
+                                            >
+                                            <span class="originalPrice"
+                                                >$80.00</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <button
+                                        type="button"
+                                        class="btn btn-primary addToCartBtn"
+                                    >
+                                        <i
+                                            class="fa-solid fa-cart-shopping"
+                                        ></i>
+                                        Add To Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Product 5 -->
+        <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered modal-custom-size">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button
+                            type="button"
+                            class="btn-close float-end"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                        <div
+                            class="row d-flex justify-content-center align-items-center"
+                        >
+                            <div class="col-md-6">
+                                <div class="productImage">
+                                    <img
+                                        src="./img/pro5.png"
+                                        alt="Product Image"
+                                    />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="productDetails">
+                                    <span class="saleOff mb-2"
+                                        >Limited Offer</span
+                                    >
+                                    <h2 class="productTitle mb-3">
+                                        Sahale Crumble Cashew Mix Snacks
+                                    </h2>
+                                    <div class="rating mb-3">
+                                        <span>★ 5.0/5 (1 review)</span>
+                                    </div>
+                                    <div
+                                        class="price d-flex align-items-center g-2 mb-3"
+                                    >
+                                        <span class="currentPrice">$45.32</span>
+                                        <div class="d-flex flex-column">
+                                            <span class="discount"
+                                                >15% Off</span
+                                            >
+                                            <span class="originalPrice"
+                                                >$54.69</span
+                                            >
+                                        </div>
+                                    </div>
+
+                                    <button
+                                        type="button"
+                                        class="btn btn-primary addToCartBtn"
+                                    >
+                                        <i
+                                            class="fa-solid fa-cart-shopping"
+                                        ></i>
+                                        &nbsp; Add To Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Modal Popup End -->
+
+        <!-- Login Modal Start -->
+        <!-- Modal -->
+        <!-- Authentication Modal -->
+        <div
+            class="modal fade"
+            id="authModal"
+            tabindex="-1"
+            aria-labelledby="authModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="authModalLabel">Login</h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="tab-content" id="authTabContent">
+                            <!-- Login Form -->
+                            <div
+                                class="tab-pane fade show active"
+                                id="loginTab"
+                                role="tabpanel"
+                            >
+                                <form id="loginForm">
+                                    <div class="text-center mb-3">
+                                        <button
+                                            type="button"
+                                            class="btn btn-outline-secondary w-100 bothLoginSignUpBtn"
+                                        >
+                                            <img
+                                                src="./img/google.svg"
+                                                alt="Google icon"
+                                                class="img-fluid googleSignUpIcon"
+                                            />
+                                            Sign in with Google
+                                        </button>
+                                    </div>
+                                    <p class="text-center">or</p>
+                                    <div class="text-center mb-3">
+                                        <button
+                                            type="button"
+                                            class="btn btn-outline-secondary w-100 bothLoginSignUpBtn"
+                                        >
+                                            <img
+                                                src="./img/email.svg"
+                                                alt="Email icon"
+                                                class="img-fluid me-2 emailSignUpIcon"
+                                            />
+                                            Sign in with Email
+                                        </button>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label
+                                            for="loginEmail"
+                                            class="form-label"
+                                            >Email</label
+                                        >
+                                        <input
+                                            type="email"
+                                            class="form-control"
+                                            id="loginEmail"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label
+                                            for="loginPassword"
+                                            class="form-label"
+                                            >Password</label
+                                        >
+                                        <input
+                                            type="password"
+                                            class="form-control"
+                                            id="loginPassword"
+                                            required
+                                        />
+                                    </div>
+                                    <div
+                                        class="d-flex justify-content-between mb-3"
+                                    >
+                                        <div class="form-check">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                id="rememberMe"
+                                            />
+                                            <label
+                                                class="form-check-label"
+                                                for="rememberMe"
+                                                >Remember me</label
+                                            >
+                                        </div>
+                                        <a
+                                            href="#"
+                                            id="forgotPasswordLink"
+                                            class="btn-link text-black-50"
+                                            >Forgot password?</a
+                                        >
+                                    </div>
+                                    <button
+                                        type="submit"
+                                        class="btn btn-primary w-100 addToCartBtn"
+                                    >
+                                        Login
+                                    </button>
+                                    <div class="text-center mt-3">
+                                        Not registered yet?
+                                        <a
+                                            href="#"
+                                            id="switchToSignUp"
+                                            class="btn-link primaryColor"
+                                            >Create an Account</a
+                                        >
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- Sign-Up Form -->
+                            <div
+                                class="tab-pane fade"
+                                id="signUpTab"
+                                role="tabpanel"
+                            >
+                                <form id="signUpForm">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="text-center mb-3">
+                                            <button
+                                                type="button"
+                                                class="btn btn-outline-secondary w-100 bothLoginSignUpBtn d-flex align-items-center justify-content-center"
+                                            >
+                                                <img
+                                                    src="./img/google.svg"
+                                                    alt="Google icon"
+                                                    class="img-fluid googleSignUpIcon"
+                                                />
+                                                Sign up with Google
+                                            </button>
+                                        </div>
+                                        <div class="text-center mb-3">
+                                            <button
+                                                type="button"
+                                                class="btn btn-outline-secondary w-100 bothLoginSignUpBtn"
+                                            >
+                                                <img
+                                                    src="./img/email.svg"
+                                                    alt="Email icon"
+                                                    class="img-fluid me-2 emailSignUpIcon"
+                                                />
+                                                Sign up with Email
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label
+                                            for="signUpName"
+                                            class="form-label"
+                                            >Name</label
+                                        >
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="signUpName"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label
+                                            for="signUpEmail"
+                                            class="form-label"
+                                            >Email</label
+                                        >
+                                        <input
+                                            type="email"
+                                            class="form-control"
+                                            id="signUpEmail"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label
+                                            for="signUpPassword"
+                                            class="form-label"
+                                            >Password</label
+                                        >
+                                        <input
+                                            type="password"
+                                            class="form-control"
+                                            id="signUpPassword"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label
+                                            for="signUpConfirmPassword"
+                                            class="form-label"
+                                            >Confirm Password</label
+                                        >
+                                        <input
+                                            type="password"
+                                            class="form-control"
+                                            id="signUpConfirmPassword"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="form-check mb-3">
+                                        <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            id="termsConditions"
+                                            required
+                                        />
+                                        <label
+                                            class="form-check-label"
+                                            for="termsConditions"
+                                        >
+                                            I accepted all terms &amp;
+                                            conditions.
+                                        </label>
+                                    </div>
+                                    <button
+                                        type="submit"
+                                        class="btn btn-primary addToCartBtn w-100"
+                                    >
+                                        Sign Up
+                                    </button>
+                                    <div class="text-center mt-3">
+                                        Already have an account?
+                                        <a
+                                            href="#"
+                                            id="switchToLogin"
+                                            class="btn-link primaryColor"
+                                            >Sign in</a
+                                        >
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Login Modal End -->
+
+        <!-- Start Bootstrap Bundle with Popper -->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"
         ></script>
+        <!-- End Bootstrap Bundle with Popper -->
 
+        <!-- Start AOS (Animate On Scroll) JS -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
         </script>
-        <!-- jQuery -->
+        <!-- End AOS JS -->
+
+        <!-- Start jQuery -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- End jQuery -->
 
-        <!-- Owl Carousel JS -->
+        <!-- Start Owl Carousel JS -->
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+        <!-- End Owl Carousel JS -->
 
-        <!-- AOS JS -->
+        <!-- Start AOS (Animate On Scroll) JS (Duplicate - consider removing) -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <!-- End AOS JS (Duplicate - consider removing) -->
+
+        <!-- Start Custom JS -->
+        <script src="./js/main.js"></script>
+        <!-- End Custom JS -->
     </body>
 </html>
